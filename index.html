@@ -32,11 +32,7 @@
 
 
     }
-    var errorHandler = function(e) {
-      console.log('error', e);
-      
-      console.log('error string', JSON.stringify(e));
-    }
+
     var noupdateHandler = function(e) {
       console.log('noupdate', e);
     }
@@ -50,7 +46,9 @@
       console.log('updateready', e);
     }
     var errorHandler = function(e) {
-      console.log('ERROR HANDLER: ', e);
+      console.log('error', e);
+      
+      console.log('error string', JSON.stringify(e));
     }
 
 
