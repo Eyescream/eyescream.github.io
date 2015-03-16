@@ -21,16 +21,6 @@
     var downloadingHandler = function(e) {
       console.log('downloading', e);
 
-
-      if (e.loaded === e.total) {
-        setTimeout(function() {
-          console.log()
-
-        }, 1500);
-      }
-
-
-
     }
 
     var noupdateHandler = function(e) {
@@ -77,6 +67,14 @@
 
      // Fired when the manifest resources have been newly redownloaded.
     appCache.addEventListener('updateready', updatereadyHandler, false);
+    
+    
+    setTimeout(function() {
+      console.log(appCache.status)
+
+    }, 1500);    
+    
+    
   </script>
 
 </head>
