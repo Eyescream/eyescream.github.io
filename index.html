@@ -20,9 +20,7 @@
     }
     var downloadingHandler = function(e) {
       console.log('downloading', e);
-
     }
-
     var noupdateHandler = function(e) {
       console.log('noupdate', e);
     }
@@ -37,10 +35,7 @@
     }
     var errorHandler = function(e) {
       console.log('error', e);
-      
-      console.log('error string', JSON.stringify(e));
     }
-
 
      // Fired after the first cache of the manifest.
     appCache.addEventListener('cached', cachedHandler, false);
@@ -70,9 +65,8 @@
     
     
     setTimeout(function() {
-      console.log(appCache.status)
-
-    }, 1500);    
+      console.log('window.applicationCache.status after 2 seconds: ', appCache.status)
+    }, 2000);    
     
     
   </script>
@@ -81,7 +75,7 @@
 
 <body class="">
 
-  <div>updateready not firing on chrome (fires only in incognito mode)</div>
+  <div>updateready not firing on chrome (fires only in incognito mode), open the console</div>
 
 </body>
 
